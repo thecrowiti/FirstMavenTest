@@ -1,13 +1,12 @@
 package Project1;
 
 public class USD extends Coin {
-    final double Value = 3.52;
+    private final double Value = 3.52;
     @Override
     public double getValue() {
         return Value;
     }
-    @Override
-    public double caculate() {
-        return getValue();
+    public double caculate(double amount) {
+        return getValue()*amount;
     }
 }

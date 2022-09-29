@@ -1,6 +1,6 @@
 package Project1;
 
-public enum coinsType {
+public enum CoinsType {
     USD,
     ILS
 }

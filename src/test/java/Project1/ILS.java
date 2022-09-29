@@ -5,8 +5,7 @@ public class ILS extends Coin {
     public double getValue() {
         return Value;
     }
-    @Override
-    public double caculate() {
-        return 0;
+    public double caculate(double amount) {
+        return getValue()*amount;
     }
 }
