@@ -3,7 +3,7 @@ package Project1;
 import java.util.Scanner;
 
 public class TypeOfCoin {
-    public String Try(String x){
+    public String Try(){
         String typeOfMoney = null;
         Scanner scanner = new Scanner(System.in);
         int userInput = scanner.nextInt();

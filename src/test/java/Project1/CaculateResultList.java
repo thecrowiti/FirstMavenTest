@@ -6,7 +6,7 @@ public class CaculateResultList {
     ArrayList<Double> theFinalAmount = new ArrayList();
 
     public void printResultList (){
-        System.out.println(theFinalAmount);
+        System.out.println("Your exchanges are : " + theFinalAmount);
     }
     public void caculateResultList (double result){
         theFinalAmount.add(result);

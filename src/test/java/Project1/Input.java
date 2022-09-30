@@ -7,6 +7,7 @@ public class Input {
         Scanner scanner = new Scanner(System.in);
         System.out.println("please enter how much money do you want to exchange: ");
         double amount = scanner.nextDouble();
+        System.out.println("The exchange ended successfully");
         if(typeOfMoney == "USD"){
             USD usd = new USD();
             return usd.caculate(amount);

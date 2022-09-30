@@ -9,13 +9,15 @@ public class MainCaller {
     public static void main(String[] args) {
         CaculateResultList caculateResultList = new CaculateResultList();
         String typeOfMoney = null;
-        TheStart.theStar();
+        TheStart theStart = new TheStart();
+        theStart.greetings();
 
         Scanner scanner = new Scanner(System.in);
         int anotherExchange = 1;
         while(anotherExchange == 1) {
+            theStart.instructions();
             TypeOfCoin typeOfCoin = new TypeOfCoin();
-            typeOfMoney = typeOfCoin.Try(typeOfMoney);
+            typeOfMoney = typeOfCoin.Try();
             Input input = new Input();
             double theAmount = input.caculateTheAmount(typeOfMoney);
             caculateResultList.caculateResultList(theAmount);
@@ -24,9 +26,7 @@ public class MainCaller {
             anotherExchange = scanner.nextInt();
 
         }
-
         caculateResultList.printResultList();
-        System.out.println("hi");
     }
 
 }
