@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Input {
     public double caculateTheAmount (String typeOfMoney){
         Scanner scanner = new Scanner(System.in);
+        System.out.println("please enter how much money do you want to exchange: ");
         double amount = scanner.nextDouble();
         if(typeOfMoney == "USD"){
             USD usd = new USD();
@@ -14,7 +15,6 @@ public class Input {
             ILS usd = new ILS();
             return usd.caculate(amount);
         }
-        System.out.println(amount);
         return amount;
     }
 }

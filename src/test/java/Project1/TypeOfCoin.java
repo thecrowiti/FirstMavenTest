@@ -8,7 +8,6 @@ public class TypeOfCoin {
         Scanner scanner = new Scanner(System.in);
         int userInput = scanner.nextInt();
     try{
-        //CoinsType coinsType = CoinsType.valueOf(typeOfMoney);
         switch (userInput){
             case 1:
                 typeOfMoney = "ILS";
@@ -18,11 +17,11 @@ public class TypeOfCoin {
                 break;
 
         }
-//    }catch (IllegalArgumentException){
-//        System.out.println("NO");
-//    }
+    }catch (Exception e){
+        System.out.println("NO");
+    }
 
-    }finally {
+    finally {
         return  typeOfMoney;
     }
     }
