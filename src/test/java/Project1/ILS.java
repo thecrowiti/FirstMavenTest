@@ -5,7 +5,7 @@ public class ILS extends Coin {
     public double getValue() {
         return Value;
     }
-    public double caculate(double amount) {
+    public double calculate(double amount) {
         return getValue()*amount;
     }
 }

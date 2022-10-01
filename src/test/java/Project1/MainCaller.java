@@ -1,5 +1,6 @@
 package Project1;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class MainCaller {
@@ -9,18 +10,32 @@ public class MainCaller {
         TheStart theStart = new TheStart();
         theStart.greetings();
 
-        Scanner scanner = new Scanner(System.in);
         int anotherExchange = 1;
         while(anotherExchange == 1) {
             theStart.instructions();
             TypeOfCoin typeOfCoin = new TypeOfCoin();
-            typeOfMoney = typeOfCoin.Try();
+            typeOfMoney = typeOfCoin.typeOfExchange();
             Input input = new Input();
-            double theAmount = input.caculateTheAmount(typeOfMoney);
+            double theAmount = input.calculateTheAmount(typeOfMoney);
             caculateResultList.caculateResultList(theAmount);
+
             System.out.println("If you want to do another exchange enter the number 1" +
                     "\nIf you want to end the exchange enter the number 2");
-            anotherExchange = scanner.nextInt();
+            boolean exchangeAgain = true;
+            while (exchangeAgain){
+                try{
+                    Scanner scanner = new Scanner(System.in);
+                    anotherExchange = scanner.nextInt();
+                    if (anotherExchange == 2 || anotherExchange == 1) {
+                        exchangeAgain = false;
+                    } else {
+                        System.out.println("Invalid Choice, please try again");
+                    }
+                }catch (InputMismatchException e){
+                    System.out.println("Invalid Choice, please try again");
+                }
+
+            }
 
         }
         caculateResultList.printResultList();
