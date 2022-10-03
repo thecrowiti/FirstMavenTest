@@ -23,7 +23,7 @@ public class MainCaller {
             double theAmount = input.calculateTheAmount(typeOfMoney);
             caculateResultList.caculateResultList(theAmount);
             ExchangeAgainLoop exchangeAgainLoop = new ExchangeAgainLoop();
-            exchangeAgainLoop.exchangeAgainLoop(anotherExchange);
+            anotherExchange = exchangeAgainLoop.exchangeAgainLoop(anotherExchange);
         }
         caculateResultList.printResultList();
     }
