@@ -1,8 +1,10 @@
-package Project1;
+package Project1.Coins;
 
-public class USD extends Coin {
-    private final double Value = 3.52;
-    @Override
+import Project1.Coins.Coin;
+
+// Convert ILS to USD
+public class ILS extends Coin {
+    final double Value = 0.28;
     public double getValue() {
         return Value;
     }

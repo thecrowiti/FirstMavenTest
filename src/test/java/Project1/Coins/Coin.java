@@ -1,4 +1,4 @@
-package Project1;
+package Project1.Coins;
 
 public abstract class Coin implements ICaculate {
     public abstract double getValue();

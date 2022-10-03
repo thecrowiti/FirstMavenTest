@@ -1,9 +1,10 @@
-package Project1;
+package Project1.InputFromUser;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TypeOfCoin {
+    // Check what type of Exchange the user want by his input
     public String typeOfExchange(){
         String typeOfMoney = null;
         while (typeOfMoney == null){
