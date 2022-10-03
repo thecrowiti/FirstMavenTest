@@ -3,7 +3,7 @@ package Project1.ExchangeAgainLoop;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-// That method check with the use if he wants to Exchange again,
+// That method check with the user if he wants to Exchange again,
 // by changing the Variable "anotherExchange" that in main loop
 public class ExchangeAgainLoop {
     public void exchangeAgainLoop(int anotherExchange){

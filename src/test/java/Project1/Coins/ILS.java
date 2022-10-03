@@ -1,7 +1,5 @@
 package Project1.Coins;
 
-import Project1.Coins.Coin;
-
 // Doing the calculation from ILS to USD
 public class ILS extends Coin {
     final double Value = 0.28;

@@ -1,6 +1,7 @@
 package Project1.Coins;
 
-public abstract class Coin implements ICaculate {
+// Lets ILS and USD extends from him
+public abstract class Coin implements ICalculate {
     public abstract double getValue();
 
     @Override

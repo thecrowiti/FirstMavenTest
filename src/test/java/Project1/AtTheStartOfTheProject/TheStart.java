@@ -1,7 +1,5 @@
 package Project1.AtTheStartOfTheProject;
 
-import java.util.Scanner;
-
 public class TheStart {
     // Greeting the user when entering the project
     public void greetings(){
