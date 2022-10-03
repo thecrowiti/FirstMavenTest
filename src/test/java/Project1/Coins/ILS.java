@@ -2,9 +2,10 @@ package Project1.Coins;
 
 import Project1.Coins.Coin;
 
-// Convert ILS to USD
+// Doing the calculation from ILS to USD
 public class ILS extends Coin {
     final double Value = 0.28;
+    @Override
     public double getValue() {
         return Value;
     }
